@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body,html{
+    font-size: 12px;
+    font-family: "微软雅黑","宋体",Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100px;
+    height: 72px;
+    position: relative;
+}
+.head_logo{
+    float: left;
+    width: 184px;
+    height: 56px;
+    padding: 16px 0 0 28px;
+    padding-top: 16px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 28px;
+}
+.head_inform{
+    width: 744px;
+    height: 72px;
+}
+.head_inform>ul{
+    display: flex;
+    font: normal 15px/70px "MSYHL","微软雅黑";
+    color: #474747;
+}
+.head_inform ul a li{
+    width: 124px;
+    height: 72px;
+    text-align: center;
+}
