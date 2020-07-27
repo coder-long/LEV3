@@ -117,7 +117,7 @@ ul {
 
 .news_banner {
     height: 180px;
-    background: url(../img/news_img/news_banner.jpg) center top no-repeat;
+    background: url("../img/news_img/news_banner.jpg") center top no-repeat;
 }
 
 .new_banner_wrap {
