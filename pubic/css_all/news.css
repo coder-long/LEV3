@@ -68,7 +68,7 @@ ul {
     float: left;
     width: 124px;
     height: 72px;
-    background: url("../img/top_nav_line.png") right center no-repeat;
+    background: url("../img/news_img/top_nav_line.png") right center no-repeat;
 }
 
 .top_nav_ul li a {
@@ -99,7 +99,7 @@ ul {
     font: normal 13px/70px "微软雅黑";
     color: #666;
     text-align: center;
-    background: url("../img/icon_language.png") 0 center no-repeat;
+    background: url("../img/news_img/icon_language.png") 0 center no-repeat;
 }
 
 .top_language a {
@@ -117,7 +117,7 @@ ul {
 
 .news_banner {
     height: 180px;
-    background: url(../img/news_banner.jpg) center top no-repeat;
+    background: url(../img/news_img/news_banner.jpg) center top no-repeat;
 }
 
 .new_banner_wrap {
