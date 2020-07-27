@@ -22,6 +22,9 @@ body,html{
     padding-bottom: 0px;
     padding-left: 28px;
 }
+.head_logo>a>img{
+    margin-left: 8px;
+}
 .head_inform{
     width: 744px;
     height: 72px;
@@ -31,7 +34,7 @@ body,html{
     font: normal 15px/70px "MSYHL","微软雅黑";
     color: #474747;
 }
-.head_inform ul a li{
+.head_inform ul li{
     width: 124px;
     height: 72px;
     text-align: center;
