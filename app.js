@@ -7,7 +7,7 @@ let db = require('./module/db')
 let app = express()
 
 
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'pubic')))
 app.use(express.static(path.join(__dirname,'uplodeImg')))
 
 app.use(bodyParser.json()) //前端post提交的代码为json格式的  "{name:'asd'}"
@@ -125,11 +125,19 @@ app.get('/api/search',(req,res)=>{
 // Vehicle.remove({char_type:'本田 思域 2019款 220TURBO CVT劲动版 国VI'}).then(res => console.log(res))  
 
 
-
+// Vehicle.find({}).then(res =>console.log(res))
 //分页
 app.post('/api/page',(req,res)=>{
 
+  Vehicle.find({}).then((data)=>{
+    res.send({
+      code:0,
+      msg:'成功',
+      data
+    })
 
+  })
+  
 })
 
 
