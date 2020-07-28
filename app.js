@@ -7,6 +7,14 @@ let db = require('./module/db')
 let app = express()
 
 
+app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'uplodeImg')))
+
+app.use(bodyParser.json()) //前端post提交的代码为json格式的  "{name:'asd'}"
+app.use(bodyParser.urlencoded({ //处理前端表单post "a=1;b=2"
+    extended: true
+}))
+
 // new User({
 //   username:'jgfhjkhgjkdfhg',
 //   pwd:'gkhjdfkjgikfdjg'
@@ -108,11 +116,15 @@ app.get('/api/search',(req,res)=>{
 
 // Vehicle.find({}).then(res => console.log(res))
 
- Vehicle.find({char_type:/朗逸/},(err,vehicle)=>{
+ Vehicle.find({char_type:'本田 思域 2019款 220TURBO CVT劲动版 国VI'},(err,vehicle)=>{
 
   console.log(vehicle);
 
 })
+
+// Vehicle.remove({char_type:'本田 思域 2019款 220TURBO CVT劲动版 国VI'}).then(res => console.log(res))  
+
+
 
 //分页
 app.post('/api/page',(req,res)=>{
@@ -124,9 +136,30 @@ app.post('/api/page',(req,res)=>{
 //删除
 app.post('/api/del',(req,res)=>{
 
+  let vehicle = req.body
 
+  Vehicle.remove({char_type:vehicle.char_type},(err,vehicle)=>{
+
+    if(err){
+      res.json({
+        code:1,
+        msg:'删除失败'
+      })
+
+      return
+    }
+
+    res.json({
+      code:0,
+      msg:'删除成功！',
+      vehicle
+    })
+
+  })
 
 })
+
+
 
 //修改数据
 app.post('/api/modify',(req,res)=>{
