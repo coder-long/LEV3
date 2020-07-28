@@ -80,8 +80,9 @@ app.post('/api/login',(req,res)=>{
 //搜索
 app.get('/api/search',(req,res)=>{
 
+
   let vehicle = new vehicle({
-    
+
     char_type:req.query
 
   })
@@ -93,6 +94,27 @@ app.get('/api/search',(req,res)=>{
 
 })
 
+let xx = Vehicle.findOne({'char_type':'本田 思域 2019款 220TURBO CVT劲动版 国VI'},(err,vehicle)=>{
+
+  if(err){
+    // res.json({
+    //   code:1,
+    //   msg:'无结果'
+    // })
+
+    return
+  }
+
+  // res.send({
+  //   code:0,
+  //   msg:'搜寻成功'
+  // })
+
+  console.log(vehicle);
+
+
+})
+// console.log(33333,xx);
 
 //分页
 
