@@ -92,7 +92,7 @@ textarea {
 
 .index-header {
     position: relative;
-    background: url(../img/9c2d7bfaed19709bbbb9cb305e1ddffe.jpg) #07370d no-repeat;
+    background: url(../img/homePageimg/9c2d7bfaed19709bbbb9cb305e1ddffe.jpg) #07370d no-repeat;
     background-size: 1920px 100%;
     background-position: 50%;
     height: 340.5px;
@@ -134,7 +134,7 @@ textarea {
     display: block;
     width: 55px;
     height: 55px;
-    background: url(../img/wh-logo.48578367102547ee80527a409862a82c.png);
+    background: url(../img/homePageimg/wh-logo.48578367102547ee80527a409862a82c.png);
     background-size: 100% 100%;
 }
 
@@ -167,7 +167,7 @@ textarea {
     display: inline-block;
     width: 6px;
     height: 3px;
-    background: url(../img/Triangle.1f79e749aad1ff66a62c0b434f283a58.png);
+    background: url(../img/homePageimg/Triangle.1f79e749aad1ff66a62c0b434f283a58.png);
     background-size: 100% 100%;
 }
 
@@ -200,7 +200,7 @@ textarea {
     background-position: 6px -265px;
     position: relative;
     padding-bottom: 16px;
-    background-image: url(../img/icon_@2x_s.5dfd8e0395d1a3188c98507b746b6df4.png);
+    background-image: url(../img/homePageimg/icon_@2x_s.5dfd8e0395d1a3188c98507b746b6df4.png);
     background-size: 451px 300px;
 }
 
