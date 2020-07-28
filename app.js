@@ -80,65 +80,60 @@ app.post('/api/login',(req,res)=>{
 //搜索
 app.get('/api/search',(req,res)=>{
 
+  let char_type = req.query.char_type  //传的参数
 
-  let vehicle = new vehicle({
+  Vehicle.find({char_type:char_type},(err,vehicle)=>{
 
-    char_type:req.query
-
+    if(err){
+      res.json({
+        code:1,
+        msg:'无结果'
+      })
+  
+      return
+    }
+  
+    res.send({
+      code:0,
+      msg:'搜寻成功',
+      vehicle
+    })
+  
+  
   })
-  let char_type = vehicle.char_type
-
-  Vehicle.find({})
-
-  res.json({})
 
 })
 
-let xx = Vehicle.findOne({'char_type':'本田 思域 2019款 220TURBO CVT劲动版 国VI'},(err,vehicle)=>{
 
-  if(err){
-    // res.json({
-    //   code:1,
-    //   msg:'无结果'
-    // })
 
-    return
-  }
+// Vehicle.find({}).then(res => console.log(res))
 
-  // res.send({
-  //   code:0,
-  //   msg:'搜寻成功'
-  // })
+ Vehicle.find({char_type:/朗逸/},(err,vehicle)=>{
 
   console.log(vehicle);
 
-
 })
-// console.log(33333,xx);
 
 //分页
-
 app.post('/api/page',(req,res)=>{
 
 
+})
+
+
+//删除
+app.post('/api/del',(req,res)=>{
 
 
 
 })
 
+//修改数据
+app.post('/api/modify',(req,res)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
+})
 
 
 
