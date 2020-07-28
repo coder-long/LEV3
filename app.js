@@ -7,7 +7,7 @@ let db = require('./module/db')
 let app = express()
 
 
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'pubic')))
 app.use(express.static(path.join(__dirname,'uplodeImg')))
 
 app.use(bodyParser.json()) //前端post提交的代码为json格式的  "{name:'asd'}"
