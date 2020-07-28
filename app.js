@@ -20,8 +20,8 @@ app.post('/api/login',(req,res)=>{
 })
 
 
-//签约艺人
-app.get('/api/art',(req,res)=>{
+//搜索
+app.get('/api/search',(req,res)=>{
 
   let art = req.query
 
