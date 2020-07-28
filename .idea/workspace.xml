@@ -22,8 +22,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pubic/buy.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="447" column="28" lean-forward="true" selection-start-line="447" selection-start-column="28" selection-end-line="447" selection-end-column="28" />
+                <state relative-caret-position="176">
+                  <caret line="511" column="8" selection-start-line="511" selection-start-column="8" selection-end-line="511" selection-end-column="8" />
                   <folding>
                     <element signature="e#743#749#0" expanded="true" />
                     <element signature="e#749#755#0" expanded="true" />
@@ -144,16 +144,15 @@
       <option name="presentableId" value="Default" />
       <updated>1595899753722</updated>
       <workItem from="1595899754865" duration="152000" />
-      <workItem from="1595899923675" duration="25225000" />
+      <workItem from="1595899923675" duration="25820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25377000" />
+    <option name="totallyTimeSpent" value="25972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -167,7 +166,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3766756" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3766756" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -252,8 +251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pubic/buy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="447" column="28" lean-forward="true" selection-start-line="447" selection-start-column="28" selection-end-line="447" selection-end-column="28" />
+        <state relative-caret-position="176">
+          <caret line="511" column="8" selection-start-line="511" selection-start-column="8" selection-end-line="511" selection-end-column="8" />
           <folding>
             <element signature="e#743#749#0" expanded="true" />
             <element signature="e#749#755#0" expanded="true" />
