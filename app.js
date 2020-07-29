@@ -21,9 +21,26 @@ app.use(bodyParser.urlencoded({ //处理前端表单post "a=1;b=2"
 //   pwd:'gkhjdfkjgikfdjg'
 // }).save()
 
-
+User.find({username:'helong'}).then(res=>console.log(res))
 //注册
 app.post('/api/res',(req,res)=>{
+
+if(User.find({username:req.body.username})){
+  res.json({
+    code:1,
+    msg:'用户名存在,请重新注册！'
+  })
+
+  return
+}
+  
+if(!req.body.username && !req.body.pwd){
+  res.json({
+    code:1,
+    msg:'请输入用户名，或密码！'
+  })
+  return
+}
 
   let user = new User({
     username:req.body.username,
