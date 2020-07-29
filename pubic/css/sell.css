@@ -23,20 +23,13 @@ textarea {
     font: 12px/1.5 arial, helvetica, clean, sans-serif;
 }
 body {
+    position: absolute;
     background: url(https://sta.guazistatic.com/node_web/sell-bg.290289564e5360959be1857de09bf8c4.jpg) no-repeat center top;
 }
 
 /* header */
 
-.index-header {
-    position: relative;
-    background: url("../img/") #07370d no-repeat;
-    background-size: 1920px 100%;
-    background-position: 50%;
-    height: 340.5px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .index-header .header-2 {
     border-bottom: none;
@@ -72,7 +65,7 @@ body {
     display: block;
     width: 55px;
     height: 55px;
-    background: url("../img/sell_img/下载\ .png");
+    background: url(../img/homePageimg/wh-logo.48578367102547ee80527a409862a82c.png);
     background-size: 100% 100%;
 }
 
@@ -105,7 +98,7 @@ body {
     display: inline-block;
     width: 6px;
     height: 3px;
-    background: url(../img/Triangle.1f79e749aad1ff66a62c0b434f283a58.png);
+    background: url(../img/homePageimg/Triangle.1f79e749aad1ff66a62c0b434f283a58.png);
     background-size: 100% 100%;
 }
 
@@ -138,7 +131,7 @@ body {
     background-position: 6px -265px;
     position: relative;
     padding-bottom: 16px;
-    background-image: url(../img/icon_@2x_s.5dfd8e0395d1a3188c98507b746b6df4.png);
+    background-image: url(../img/homePageimg/icon_@2x_s.5dfd8e0395d1a3188c98507b746b6df4.png);
     background-size: 451px 300px;
 }
 
@@ -192,7 +185,7 @@ body {
 }
 
 .header-2 .nav-list a.active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #3CB46D;
 }
 
 .header-2 .nav-list a:hover {
