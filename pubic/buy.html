@@ -577,18 +577,16 @@
     //
     // )
     var floats = document.querySelector('.floats');
-
-
+    floats.appendChild();
     window.addEventListener('scroll', function () {
-        console.log(document.documentElement.scrollTop);
+        // console.log(document.documentElement.scrollTop);
         // console.log('滚动')
         if (document.documentElement.scrollTop >= 500) {
             floats.style.display = 'block';
         } else {
             floats.style.display = 'none';
         }
-    })
-
+    });
 
 
     let html = ''
