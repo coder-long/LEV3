@@ -21,30 +21,47 @@ app.use(bodyParser.urlencoded({ //处理前端表单post "a=1;b=2"
 //   pwd:'gkhjdfkjgikfdjg'
 // }).save()
 
-
+User.find({username:'helong'}).then(res=>console.log(res))
 //注册
-app.post('/api/res', (req, res) => {
+app.post('/api/res',(req,res)=>{
 
-    let user = new User({
-        username: req.body.username,
-        pwd: req.body.pwd,
-        icon: req.body.icon, // 图片上传的地址
-        number: req.body.number
-    })
+if(User.find({username:req.body.username})){
+  res.json({
+    code:1,
+    msg:'用户名存在,请重新注册！'
+  })
 
-    user.save((err, user) => {
-            if (err) {
-                res.send(500, {
-                    code: 1,
-                    msg: '失败'
-                })
-            }
-            res.send({
-                code: 0,
-                msg: '成功'
-            })
-        })
-        // User.insertMany({username:user.username,pwd:user.pwd,icon:user.icon,number:user.number})
+  return
+}
+  
+if(!req.body.username && !req.body.pwd){
+  res.json({
+    code:1,
+    msg:'请输入用户名，或密码！'
+  })
+  return
+}
+
+  let user = new User({
+    username:req.body.username,
+    pwd:req.body.pwd,
+    icon:req.body.icon,// 图片上传的地址
+    number:req.body.number
+ })
+
+ user.save((err,user)=>{
+   if(err){
+     res.send(500,{
+       code:1,
+       msg:'失败'
+     })
+   }
+   res.send({
+     code:0,
+     msg:'成功'
+   })
+ })
+  // User.insertMany({username:user.username,pwd:user.pwd,icon:user.icon,number:user.number})
 
 
 })
