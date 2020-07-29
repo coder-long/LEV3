@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da506a4-ece0-4601-b7d9-cb5228bb7300" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pubic/buyStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubic/buy.html" beforeDir="false" afterPath="$PROJECT_DIR$/pubic/buy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubic/buyStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/pubic/buyStyle.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,18 +19,21 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.48216644">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pubic/buy.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="511" column="8" selection-start-line="511" selection-start-column="8" selection-end-line="511" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#743#749#0" expanded="true" />
-                    <element signature="e#749#755#0" expanded="true" />
-                    <element signature="e#1099#1105#0" expanded="true" />
-                    <element signature="e#1105#1111#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="6132">
+                  <caret line="530" column="8" lean-forward="true" selection-start-line="530" selection-start-column="8" selection-end-line="530" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4450">
+                  <caret line="178" selection-start-line="178" selection-end-line="178" />
                 </state>
               </provider>
             </entry>
@@ -42,12 +46,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pubic/buyStyle.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="324" column="20" selection-start-line="324" selection-start-column="20" selection-end-line="324" selection-end-column="20" />
+                <state relative-caret-position="375">
+                  <caret line="299" column="20" lean-forward="true" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -71,45 +75,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pubic/css_all/buyStyle.css" />
-        <option value="$PROJECT_DIR$/pubic/buyStyle.css" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/pubic/buy.html" />
+        <option value="$PROJECT_DIR$/pubic/buyStyle.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="68" />
-    <option name="y" value="-24" />
+    <option name="x" value="66" />
+    <option name="y" value="-25" />
     <option name="width" value="1935" />
-    <option name="height" value="1089" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LEV3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEV3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEV3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEV3" type="462c0819:PsiDirectoryNode" />
-              <item name="pubic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEV3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEV3" type="462c0819:PsiDirectoryNode" />
-              <item name="pubic" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,17 +128,19 @@
       <option name="presentableId" value="Default" />
       <updated>1595899753722</updated>
       <workItem from="1595899754865" duration="152000" />
-      <workItem from="1595899923675" duration="25820000" />
+      <workItem from="1595899923675" duration="28773000" />
+      <workItem from="1595984593761" duration="892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25972000" />
+    <option name="totallyTimeSpent" value="29817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24966975" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.0997358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -166,7 +152,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3766756" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28781793" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -177,64 +163,23 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pubic/css_all/buyStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (1).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (3).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (20).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/more_news.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ewm_weibo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/yulan33s.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/yulan28s.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (5).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (8).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (9).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/news_img/news_banner.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/news_img/icon_language.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/news_img/top_logo_wm.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (6).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (10).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (15).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/img/25f80b2b06fe7b99c568e8d06027d41c.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pubic/css_all/buyStyle.css" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (1).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (3).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (20).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/more_news.png" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ewm_weibo.png" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/yulan33s.jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/yulan28s.jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (5).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (8).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (9).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/news_img/news_banner.jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/news_img/icon_language.png" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/news_img/top_logo_wm.png" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (6).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (10).jpg" />
+    <entry file="file://$PROJECT_DIR$/pubic/img/index_img/ (15).jpg" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -242,23 +187,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubic/buyStyle.css">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="324" column="20" selection-start-line="324" selection-start-column="20" selection-end-line="324" selection-end-column="20" />
+        <state relative-caret-position="4450">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pubic/img/25f80b2b06fe7b99c568e8d06027d41c.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pubic/buy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="511" column="8" selection-start-line="511" selection-start-column="8" selection-end-line="511" selection-end-column="8" />
-          <folding>
-            <element signature="e#743#749#0" expanded="true" />
-            <element signature="e#749#755#0" expanded="true" />
-            <element signature="e#1099#1105#0" expanded="true" />
-            <element signature="e#1105#1111#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6132">
+          <caret line="530" column="8" lean-forward="true" selection-start-line="530" selection-start-column="8" selection-end-line="530" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubic/buyStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="299" column="20" lean-forward="true" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
         </state>
       </provider>
     </entry>
