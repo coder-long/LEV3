@@ -62,28 +62,6 @@ if(!req.body.username && !req.body.pwd){
    })
  })
   // User.insertMany({username:user.username,pwd:user.pwd,icon:user.icon,number:user.number})
-app.post('/api/res', (req, res) => {
-
-    let user = new User({
-        username: req.body.username,
-        pwd: req.body.pwd,
-        icon: req.body.icon, // 图片上传的地址
-        number: req.body.number
-    })
-
-    user.save((err, user) => {
-            if (err) {
-                res.send(500, {
-                    code: 1,
-                    msg: '失败'
-                })
-            }
-            res.send({
-                code: 0,
-                msg: '成功'
-            })
-        })
-        // User.insertMany({username:user.username,pwd:user.pwd,icon:user.icon,number:user.number})
 
 
 })
