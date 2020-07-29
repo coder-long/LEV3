@@ -9,6 +9,51 @@
 </head>
 
 <body>
+
+    <!--顶部浮动固定栏-->
+    <div class="floats">
+        <div class="floatsBox">
+            <p>品牌</p>
+            <select>
+                <option>不限</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <p>车系</p>
+            <select>
+                <option>不限</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <p>价格</p>
+            <select>
+                <option>不限</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <p>热门</p>
+            <select>
+                <option>不限</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <p>更多</p>
+        </div>
+        <!--右侧浮动栏-->
+
+    </div>
+    <div class="floatsLeft">
+        <div class="iWantBuyCar"></div>
+    </div>
+
     <div class="wrapper">
         <div class="header">
             <div class="logo"></div>
@@ -94,7 +139,7 @@
                 <ul class="trademark">
                     <p>更多</p>
                     <li>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>车龄</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -102,7 +147,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>变速箱</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -110,7 +155,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>车型</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -118,7 +163,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>里程</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -126,7 +171,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>排放标准</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -134,7 +179,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>座位数</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -142,7 +187,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>燃油类型</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -150,7 +195,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>颜色</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -158,7 +203,7 @@
                             <option value="">4</option>
                             <option value="">5</option>
                         </select>
-                        <select>
+                        <select class="hoverColorGreen hoverBoderGreen">
                             <option>车牌所在地</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -531,7 +576,30 @@
     // }
     //
     // )
+    var floats = document.querySelector('.floats');
 
+
+    window.addEventListener('scroll', function () {
+        console.log(document.documentElement.scrollTop);
+        // console.log('滚动')
+        if (document.documentElement.scrollTop >= 500) {
+            floats.style.display = 'block';
+        } else {
+            floats.style.display = 'none';
+        }
+    })
+
+
+
+    let html = ''
+    let url = '/api/page'
+
+    $.post(url, (res) => {
+
+        console.log(res);
+
+    })
+    $('.carListBox')
 
 
 </script>

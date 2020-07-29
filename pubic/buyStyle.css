@@ -5,6 +5,48 @@
     text-decoration: none;
     color: black;
 }
+/*==========================顶部浮动筛选框===============*/
+.floats{
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    background-color: white;
+    display: none;
+    align-items: center;
+    border-bottom: #a5abb2 solid 1px;
+    /*z-index: 10;*/
+}
+.floatsBox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.floats p{
+    line-height: 48px;
+}
+.floats select{
+    width: 100px;
+    height: 30px;
+    margin: auto 10px;
+
+}
+/*===================右侧浮动栏======================================*/
+.floatsLeft{
+    width: 40px;
+    height: 800px;
+    right: 0px;
+    position: fixed;
+    background-color: #2a2c37;
+}
+.iWantBuyCar{
+    background: url(//cli-sta.guazistatic.com/c2c_web/side-bar@2x.3cde37b723751598f4a9f2d8e95a43f7.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 259px 361px;
+}
+/*===========================*/
+
 .wrapper{
     /*width: 80%;*/
     /*height: 55px;*/
@@ -142,7 +184,8 @@
 }
 .trademark{
     display: flex;
-    margin: 0 20px;
+    /*margin: 0 20px;*/
+    padding: 0 20px;
     outline: 1px solid #a7a7a7;
 }
 .selectList p{
@@ -199,6 +242,12 @@
 }
 .hoverColorGreen:hover{
     color: #22ac38;
+}
+.hoverBoderGreen:hover{
+    border: 1px solid #22ac38;
+}
+.hoverBoderGreen{
+
 }
 /*=================================汽车列表==============*/
 
