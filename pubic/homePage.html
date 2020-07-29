@@ -65,11 +65,11 @@
             <ul class="phone-login">
                 <li>
                     <p class="zhuce-login-tit">注册账号</p>
-                    <input name="phone" class="phone-login-input js-phoneNum1" maxlength="8" placeholder="请不要取花里胡哨得名字系统会自动和谐掉">
+                    <input name="phone" class="phone-login-input js-phoneNum1 username" maxlength="8" placeholder="请不要取花里胡哨的名字系统会自动和谐掉">
                 </li>
                 <li>
                     <p class="zhuce-login-tit">注册密码</p>
-                    <input type="password" class="phone-login-input js-phoneNum1" maxlength="10" placeholder="请设置6-10位数字&字母组合登密码">
+                    <input type="password" class="phone-login-input js-phoneNum1 pwd" maxlength="10" placeholder="请设置6-10位数字&字母组合登密码">
                 </li>
             </ul>
             <button data-track-phone="#login1 .js-phoneNum1" class="zhuce-btn  js-checkcode" type="submit">确认注册</button>
@@ -157,7 +157,22 @@
     </div>
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./js/homePage.js"></script>
 
+<script src="./js/homePage.js"></script>
+<!-- <script>
+    let url = '/api/res'
+    $('.zhuce-btn').on('click', function() {
+        console.log(111);
+        let username = $('.username').val()
+        let pwd = $('.pwd').val()
+        console.log(username, pwd);
+        $.post(url, {
+            username,
+            pwd
+        }, (res) => {
+            console.log(res);
+        })
+    })
+</script> -->
 
 </html>

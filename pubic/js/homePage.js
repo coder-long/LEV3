@@ -14,3 +14,27 @@ $('.uc-zhuce').on('click', function() {
 $('.pop-close').on('click', function() {
     $('.zhuce-box').hide();
 });
+
+let url = '/api/res'
+$('.zhuce-btn').on('click', function() {
+    let username = $('.username').val()
+
+    let pwd = $('.pwd').val()
+
+    $.post(url, {
+            username,
+            pwd
+        }, (res) => {
+            console.log(res);
+        })
+        // if (username.length == 0 || ) {
+        //     alert('账号不能为空')
+        // } else {
+        //     $.post(url, {
+        //         username,
+        //         pwd
+        //     }, (res) => {
+        //         console.log(res);
+        //     })
+        // }
+})
