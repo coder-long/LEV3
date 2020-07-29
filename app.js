@@ -1,4 +1,5 @@
 const express = require("express")
+const cors = require('cors')
 const path = require("path")
 const bodyParser = require("body-parser")
 const User = require('./module/user')
@@ -9,7 +10,7 @@ let app = express()
 
 app.use(express.static(path.join(__dirname,'pubic')))
 app.use(express.static(path.join(__dirname,'uplodeImg')))
-
+app.use(cors())
 app.use(bodyParser.json()) //前端post提交的代码为json格式的  "{name:'asd'}"
 app.use(bodyParser.urlencoded({ //处理前端表单post "a=1;b=2"
     extended: true
@@ -104,7 +105,7 @@ app.get('/api/search',(req,res)=>{
     res.send({
       code:0,
       msg:'搜寻成功',
-      vehicle
+      data:vehicle
     })
   
   
@@ -133,11 +134,11 @@ app.post('/api/page',(req,res)=>{
     res.send({
       code:0,
       msg:'成功',
-      data
+      data:data
     })
 
   })
-  
+
 })
 
 
@@ -173,8 +174,48 @@ app.post('/api/del',(req,res)=>{
 app.post('/api/modify',(req,res)=>{
 
 
+})
+
+
+
+// 热车类型分页
+app.post('/api/hot',(req,res)=>{
+
+  Vehicle.find({now_price:{ $lt: '15万'}}).limit(12).then((data)=>{
+    console.log(data);
+  })
 
 })
+Vehicle.find({now_price:{ $lt: '15万'}}).limit(12).then((data)=>{
+  console.log(data);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -184,3 +225,4 @@ app.post('/api/modify',(req,res)=>{
 app.listen(8828,()=>{
   console.log('服务已开启！');
 })
+
