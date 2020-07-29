@@ -87,6 +87,7 @@ app.post('/api/login', (req, res) => {
 
 
 //搜索
+<<<<<<< HEAD
 app.get('/api/search', (req, res) => {
 
     let char_type = req.query.char_type //传的参数
@@ -109,6 +110,27 @@ app.get('/api/search', (req, res) => {
         })
 
 
+=======
+app.get('/api/search',(req,res)=>{
+
+  let char_type =req.query.char_type //传的参数
+
+  Vehicle.find({char_type:char_type},(err,vehicle)=>{
+
+    if(err){
+      res.json({
+        code:1,
+        msg:'无结果'
+      })
+  
+      return
+    }
+  
+    res.send({
+      code:0,
+      msg:'搜寻成功',
+      data:vehicle
+>>>>>>> d0faa3fe3a71ea7ac314d7d0b3e1f18664b70472
     })
 
 })
@@ -117,11 +139,15 @@ app.get('/api/search', (req, res) => {
 
 // Vehicle.find({}).then(res => console.log(res))
 
+<<<<<<< HEAD
 Vehicle.find({ char_type: '本田 思域 2019款 220TURBO CVT劲动版 国VI' }, (err, vehicle) => {
 
     // console.log(vehicle);
 
 })
+=======
+//  Vehicle.find({char_type:/奥迪/}).then(res=>console.log(res))
+>>>>>>> d0faa3fe3a71ea7ac314d7d0b3e1f18664b70472
 
 // Vehicle.remove({char_type:'本田 思域 2019款 220TURBO CVT劲动版 国VI'}).then(res => console.log(res))  
 
@@ -130,12 +156,26 @@ Vehicle.find({ char_type: '本田 思域 2019款 220TURBO CVT劲动版 国VI' },
 //分页
 app.post('/api/page', (req, res) => {
 
+<<<<<<< HEAD
     Vehicle.find({}).then((data) => {
         res.send({
             code: 0,
             msg: '成功',
             data: data
         })
+=======
+  let page = req.body.page
+
+  Vehicle.find({})
+  .skip(40*page)
+  .limit(40)
+  .then((data)=>{
+    res.send({
+      code:0,
+      msg:'成功',
+      data:data
+    })
+>>>>>>> d0faa3fe3a71ea7ac314d7d0b3e1f18664b70472
 
     })
 
@@ -186,9 +226,15 @@ app.post('/api/hot', (req, res) => {
     })
 
 })
+<<<<<<< HEAD
 Vehicle.find({ now_price: { $lt: '15万' } }).limit(12).then((data) => {
     // console.log(data);
 })
+=======
+// Vehicle.find({now_price:{ $lt: '15万'}}).limit(12).then((data)=>{
+//   console.log(data);
+// })
+>>>>>>> d0faa3fe3a71ea7ac314d7d0b3e1f18664b70472
 
 
 
