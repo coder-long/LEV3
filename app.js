@@ -109,120 +109,87 @@ app.get('/api/search', (req, res) => {
         })
 
     })
+})
 
 
 
-    // Vehicle.find({}).then(res => console.log(res))
+// Vehicle.find({}).then(res => console.log(res))
 
-    //  Vehicle.find({char_type:/奥迪/}).then(res=>console.log(res))
+//  Vehicle.find({char_type:/奥迪/}).then(res=>console.log(res))
 
-    // Vehicle.remove({char_type:'本田 思域 2019款 220TURBO CVT劲动版 国VI'}).then(res => console.log(res))  
-
-
-    // Vehicle.find({}).then(res =>console.log(res))
-    //分页
-    app.post('/api/page', (req, res) => {
-
-        let page = req.body.page
-
-        Vehicle.find({})
-            .skip(40 * page)
-            .limit(40)
-            .then((data) => {
-                res.send({
-                    code: 0,
-                    msg: '成功',
-                    data: data
-                })
-
-            })
-
-    })
+// Vehicle.remove({char_type:'本田 思域 2019款 220TURBO CVT劲动版 国VI'}).then(res => console.log(res))  
 
 
-    //删除
-    app.post('/api/del', (req, res) => {
+// Vehicle.find({}).then(res =>console.log(res))
+//分页
+app.post('/api/page', (req, res) => {
 
-        let vehicle = req.body
+    let page = req.body.page
 
-        Vehicle.remove({ char_type: vehicle.char_type }, (err, vehicle) => {
-
-            if (err) {
-                res.json({
-                    code: 1,
-                    msg: '删除失败'
-                })
-
-                return
-            }
-
-            res.json({
+    Vehicle.find({})
+        .skip(40 * page)
+        .limit(40)
+        .then((data) => {
+            res.send({
                 code: 0,
-                msg: '删除成功！',
-                vehicle
+                msg: '成功',
+                data: data
             })
 
         })
 
-    })
+})
 
 
+//删除
+app.post('/api/del', (req, res) => {
 
-    //修改数据
-    app.post('/api/modify', (req, res) => {
+    let vehicle = req.body
 
+    Vehicle.remove({ char_type: vehicle.char_type }, (err, vehicle) => {
 
-    })
-
-
-
-    // 热车类型分页
-    app.post('/api/hot', (req, res) => {
-
-            Vehicle.find({ now_price: { $lt: '15万' } }).limit(12).then((data) => {
-                console.log(data);
+        if (err) {
+            res.json({
+                code: 1,
+                msg: '删除失败'
             })
 
+            return
+        }
+
+        res.json({
+            code: 0,
+            msg: '删除成功！',
+            vehicle
         })
-        // Vehicle.find({now_price:{ $lt: '15万'}}).limit(12).then((data)=>{
-        //   console.log(data);
-        // })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    app.listen(8828, () => {
-        console.log('服务已开启！');
     })
 
+})
 
+
+
+//修改数据
+app.post('/api/modify', (req, res) => {
+
+
+})
+
+
+
+// 热车类型分页
+app.post('/api/hot', (req, res) => {
+
+        Vehicle.find({ now_price: { $lt: '15万' } }).limit(12).then((data) => {
+            console.log(data);
+        })
+
+    })
+    // Vehicle.find({now_price:{ $lt: '15万'}}).limit(12).then((data)=>{
+    //   console.log(data);
+    // })
+
+
+app.listen(8828, () => {
+    console.log('服务已开启！');
 })
