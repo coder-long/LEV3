@@ -34,8 +34,9 @@ $('.zhuce-btn').on('click', function() {
                 pwd
             },
             success(data) {
-                console.log(data);
-                if (data.code == 0) {
+                if (data.code == 1) {
+                    alert('此账号已被注册请重新注册！')
+                } else if (data.code == 0) {
                     alert('注册成功！ 快去登录吧！');
                     $('.zhuce-box').hide();
                     $('.pop-box').show();
