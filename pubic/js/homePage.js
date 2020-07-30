@@ -13,30 +13,37 @@ $('.uc-zhuce').on('click', function() {
 /* ----------注册框隐藏--------------------- */
 $('.pop-close').on('click', function() {
     $('.zhuce-box').hide();
+    $('.username').val('')
+    $('.pwd').val('')
 });
 
+/* -----------注冊界面--------------------------- */
 let url = '/api/res'
 $('.zhuce-btn').on('click', function() {
     let username = $('.username').val()
     let pwd = $('.pwd').val()
-        // $.post(url, {
-        //         username,
-        //         pwd
-        //     }, (res) => {
-        //         console.log(res);
-        //     })
+    if (username == '' || pwd == '') {
+        alert('请输入用户名或密码')
+        return
+    } else {
+        $.ajax({
+            type: "post",
+            url: '/api/res',
+            data: {
+                username,
+                pwd
+            },
+            success(data) {
+                console.log(data);
+                if (data.code == 0) {
+                    alert('注册成功！ 快去登录吧！');
+                    $('.zhuce-box').hide();
+                    $('.pop-box').show();
+                }
+            }
 
-    $.ajax({
-        type: "post",
-        url: '/api/res',
-        data: {
-            username,
-            pwd
-        },
-        success(data) {
-            console.log(data);
-
-        }
-
-    })
+        })
+    }
 })
+
+/* ------------------登录界面-------------------------- */
