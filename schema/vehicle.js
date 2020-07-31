@@ -11,6 +11,6 @@ let Vehicle = mongose.Schema({
   position: String, //位置
   icon_new: String //新上市
 
-})
+});
 
-module.exports = Vehicle
+module.exports = Vehicle;

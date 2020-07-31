@@ -8,8 +8,8 @@ let db = require('./module/db')
 let app = express()
 
 
-app.use(express.static(path.join(__dirname, 'pubic')))
-app.use(express.static(path.join(__dirname, 'uplodeImg')))
+app.use(express.static(path.join(__dirname, 'pubic')));
+app.use(express.static(path.join(__dirname, 'uplodeImg')));
 app.use(cors())
 app.use(bodyParser.json()) //前端post提交的代码为json格式的  "{name:'asd'}"
 app.use(bodyParser.urlencoded({ //处理前端表单post "a=1;b=2"
@@ -161,7 +161,7 @@ app.post('/api/page', (req, res) => {
 //删除
 app.post('/api/del', (req, res) => {
 
-    let vehicle = req.body
+    let vehicle = req.body;
 
     Vehicle.remove({ char_type: vehicle.char_type }, (err, vehicle) => {
 
@@ -206,15 +206,15 @@ app.post('/api/hot', (req, res) => {
     //   console.log(data);
     // })
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
 
 
 app.listen(8828,()=>{
   console.log('服务已开启！');
 })
-=======
->>>>>>> 41d12e942c44515ead628a9b9f5e14d4af8ca307
+// =======
+// >>>>>>> 41d12e942c44515ead628a9b9f5e14d4af8ca307
 
 app.listen(8828, () => {
     console.log('服务已开启！');

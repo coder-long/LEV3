@@ -225,7 +225,6 @@
 }
 .carListHead>p{
     /*line-height: 57px;*/
-
 }
 .carListHeadRight{
     color: #a5abb2;
@@ -291,7 +290,6 @@
 .carlists p:nth-of-type(3){
     font-size: 20px;
     margin-bottom: 10px;
-
     color: #f95523;
 }
 .pageChange{
